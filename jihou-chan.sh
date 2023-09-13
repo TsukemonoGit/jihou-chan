@@ -1,5 +1,6 @@
 #!/bin/bash
 # 実行コマンド　bash jihou-chan.sh
+# 実行場所によらないようにする
 cd `dirname $0`
 
 # .envファイルから環境変数を読み込む　bashの "source" はshの "." 
@@ -33,5 +34,4 @@ fi
 
 echo "$MSG"
 
-#/home/mono/.cargo/bin/
 nostr-tool -r wss://yabu.me -r wss://nos.lol -r wss://r.kojira.io -r wss://relay.nostr.moctane.com -p $NSEC text-note -c "$MSG"
