@@ -8,10 +8,6 @@ if [ -f .env ]; then
     source ./.env
 fi
 
-# 環境変数の値を利用する
-# echo "MY_VARIABLEの値は$MY_VARIABLEです"
-
-# LANG=en_US.UTF-8
 num=`date '+%I:%M'`
 ampm=`date '+%p'`
 
@@ -22,7 +18,6 @@ dif2="00:00"
 
 if [ $dif1 != $dif2 ] ; then
 num=`date '+%H:%M'`
-  #MSG="‐‐‐‐‐‐‐‐${num}_${ampm}‐‐‐‐‐‐‐‐"
   MSG=" --------------${num}--------------"
   
     echo $num
