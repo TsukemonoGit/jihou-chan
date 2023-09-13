@@ -1,5 +1,6 @@
 #!/bin/bash
 # 実行コマンド　bash jihou-chan.sh
+cd `dirname $0`
 
 # .envファイルから環境変数を読み込む　bashの "source" はshの "." 
 if [ -f .env ]; then
@@ -31,6 +32,6 @@ else
 fi
 
 echo "$MSG"
-echo $NSEC
 
+#/home/mono/.cargo/bin/
 nostr-tool -r wss://yabu.me -r wss://nos.lol -r wss://r.kojira.io -r wss://relay.nostr.moctane.com -p $NSEC text-note -c "$MSG"
