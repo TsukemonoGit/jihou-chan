@@ -29,4 +29,4 @@ fi
 
 echo "$MSG"
 
-nostr-tool -r wss://yabu.me -r wss://nos.lol -r wss://r.kojira.io -r wss://relay.nostr.moctane.com -p $NSEC text-note -c "$MSG"
+nostr-tool -r wss://yabu.me -r wss://nos.lol -r wss://r.kojira.io -r wss://relay-jp.nostr.wirednet.jp -r wss://relay-jp.nostr.moctane.com -p $NSEC text-note -c "$MSG"
