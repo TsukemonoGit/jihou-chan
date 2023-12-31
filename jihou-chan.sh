@@ -17,7 +17,7 @@ dif1="$(date '+%H:%M')"
 dif2="00:00"
 
 #年の変わり
-def3="$(date '+%m-%d')"
+dif3="$(date '+%m-%d')"
 
 if [ $dif1 != $dif2 ] ; then
 num=`date '+%H:%M'`
