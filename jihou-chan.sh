@@ -16,15 +16,22 @@ ampm=`date '+%p'`
 dif1="$(date '+%H:%M')"
 dif2="00:00"
 
+#年の変わり
+def3="$(date '+%m-%d')"
+
 if [ $dif1 != $dif2 ] ; then
 num=`date '+%H:%M'`
   MSG=" --------------${num}--------------"
   
     echo $num
 else
-    num1="$(date '+%Y/%m/%d(%a)')"
-    MSG=" ----------${num1}----------"
-    echo $num
+     if [ "$dif3" == "01-01" ]; then
+        MSG="＼＼\\\\ꐕ ꐕ ꐕ 謹 賀 新 年 ꐕ ꐕ ꐕ//／／"
+    else
+        num1="$(date '+%Y/%m/%d(%a)')"
+        MSG=" ----------${num1}----------"
+    fi
+   
 fi
 
 echo "$MSG"
