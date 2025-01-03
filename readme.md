@@ -1,5 +1,7 @@
 [nostr-tool](https://github.com/0xtrr/nostr-tool)
 をインストールする
+(``cargo install nostr-tool``)
+(cargo: ``curl https://sh.rustup.rs -sSf | sh``)
 
 .envにNSECを設定する
 
